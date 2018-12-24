@@ -1,0 +1,21 @@
+{% block javascripts %}
+{% javascripts
+    '@EzPlatformFormBuilderMaskedInputBundle/Resources/public/js/inputmask/dependencyLibs/inputmask.dependencyLib.js'
+    '@EzPlatformFormBuilderMaskedInputBundle/Resources/public/js/inputmask/inputmask.js'
+    '@EzPlatformFormBuilderMaskedInputBundle/Resources/public/js/inputmask/inputmask.extensions.js'
+    '@EzPlatformFormBuilderMaskedInputBundle/Resources/public/js/inputmask/inputmask.numeric.extensions.js'
+    '@EzPlatformFormBuilderMaskedInputBundle/Resources/public/js/inputmask/inputmask.date.extensions.js'
+    output='js/inputmask/inputmask.js'
+%}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}
+<script>
+    let maskedInputs = document.getElementsByClassName("mateuszbieniek-masked-input");
+    let i;
+    for (i = 0; i < maskedInputs.length; i++) {
+        let maskedInput = maskedInputs[i];
+        let im = new Inputmask({"mask": maskedInput.getAttribute("mask"), "greedy": maskedInput.getAttribute("greedy")});
+        im.mask(maskedInput);
+    }
+</script>

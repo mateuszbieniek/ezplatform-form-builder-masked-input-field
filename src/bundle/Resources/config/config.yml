@@ -1,3 +1,11 @@
+assetic:
+    bundles:
+        - 'EzPlatformFormBuilderMaskedInputBundle'
+
+twig:
+    form_themes:
+        - '@EzPlatformFormBuilderMaskedInput/form/fields.html.twig'
+
 ez_platform_form_builder:
     fields:
         masked:
@@ -8,3 +16,6 @@ ez_platform_form_builder:
                 mask:
                     name: 'Mask'
                     type: 'string'
+                greedy:
+                    name: 'Greedy'
+                    type: 'checkbox'

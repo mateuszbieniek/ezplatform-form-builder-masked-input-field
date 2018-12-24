@@ -18,9 +18,9 @@ class MaskedMapper extends GenericFieldMapper
         $options['field'] = $field;
         $options['label'] = $field->getName();
         $options['attr'] = [
-            'options' => [
-                'maske' => $field->getAttributeValue('mask'),
-            ],
+            'mask' => $field->getAttributeValue('mask'),
+            'greedy' => $field->getAttributeValue('greedy'),
+            'class' => 'mateuszbieniek-masked-input',
         ];
 
         $options['constraints'] = [
