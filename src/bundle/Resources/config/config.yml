@@ -1,0 +1,10 @@
+ez_platform_form_builder:
+    fields:
+        masked:
+            name: 'Masked'
+            category: 'Basic form fields'
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#captcha'
+            attributes:
+                mask:
+                    name: 'Mask'
+                    type: 'string'

@@ -1,0 +1,12 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    MateuszBieniek\EzPlatformFormBuilderMaskedInput\FormBuilder\Field\Mapper\MaskedMapper:
+        arguments:
+            $fieldIdentifier: 'masked'
+            $formType: 'MateuszBieniek\EzPlatformFormBuilderMaskedInput\Form\Type\MaskedFieldType'
+        tags:
+            - { name: ezplatform.form_builder.field_mapper }
