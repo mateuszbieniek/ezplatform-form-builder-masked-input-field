@@ -23,10 +23,6 @@ class MaskedMapper extends GenericFieldMapper
             'class' => 'mateuszbieniek-masked-input',
         ];
 
-        $options['constraints'] = [
-            //Todo
-        ];
-
         return $options;
     }
 }
