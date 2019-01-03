@@ -19,3 +19,5 @@ ez_platform_form_builder:
                 greedy:
                     name: 'Greedy'
                     type: 'checkbox'
+            validators:
+                required: ~
