@@ -11,7 +11,7 @@ ez_platform_form_builder:
         masked:
             name: 'Masked'
             category: 'Basic form fields'
-            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#captcha'
+            thumbnail: '/bundles/ezplatformadminui/img/ez-icons.svg#input-line'
             attributes:
                 mask:
                     name: 'Mask'
