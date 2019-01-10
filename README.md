@@ -4,7 +4,7 @@ Bundle provides masked field for the Form Builder in eZ Platform EE.
 Bundle is based on: https://github.com/RobinHerbots/Inputmask
 
 ## Installation
-### 1. Enable EzPublishLegacyBundle and EzSystemsEzPlatformXmlTextFieldTypeBundle
+### 1. Enable `EzPlatformFormBuilderMaskedInputBundle`
 Edit `app/AppKernel.php`, and add 
 ```
 new MateuszBieniek\EzPlatformFormBuilderMaskedInputBundle\EzPlatformFormBuilderMaskedInputBundle(),
