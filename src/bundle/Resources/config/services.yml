@@ -17,3 +17,5 @@ services:
             - '@event_dispatcher'
         tags:
             - { name: form.type }
+
+    MateuszBieniek\EzPlatformFormBuilderMaskedInput\Validator\Constraints\MaskedValidator: ~
