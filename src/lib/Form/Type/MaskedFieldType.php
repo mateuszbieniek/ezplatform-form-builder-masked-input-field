@@ -26,7 +26,7 @@ class MaskedFieldType extends AbstractFieldType
         $this->dispatcher->addListener('kernel.response', function ($event) use ($javascriptContent) {
             $response = $event->getResponse();
             $content = $response->getContent();
-            if (strpos($content, '/js/inputmask/') !== false) {
+            if (strpos($content, 'ezplatform-form-builder-mb-masked-input.js') !== false) {
                 return;
             }
 
